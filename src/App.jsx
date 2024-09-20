@@ -10,9 +10,15 @@ function App() {
       <div className="min-h-screen p-6 bg-white text-gray-600 text-lg">
         <Navbar />
         <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/favorites" element={<Favorites />} />
-          <Route path="/recipe-item/:id" element={<Details />} />
+          <Route index path="/React-Food-Recipe-App/" element={<Home />} />
+          <Route
+            path="/React-Food-Recipe-App/favorites"
+            element={<Favorites />}
+          />
+          <Route
+            path="/React-Food-Recipe-App/recipe-item/:id"
+            element={<Details />}
+          />
         </Routes>
       </div>
     </div>
