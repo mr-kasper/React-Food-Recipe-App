@@ -34,7 +34,6 @@ export default function GlobalState({ children }) {
   }
 
   function handleAddToFavorite(getCurrentItem) {
-    console.log(getCurrentItem);
     let cpyFavoritesList = [...favoritesList];
     const index = cpyFavoritesList.findIndex(
       (item) => item.id === getCurrentItem.id
@@ -48,8 +47,6 @@ export default function GlobalState({ children }) {
 
     setFavoritesList(cpyFavoritesList);
   }
-
-  console.log(favoritesList, 'favoritesList');
 
   return (
     <GlobalContext.Provider

@@ -18,7 +18,6 @@ export default function Details() {
       );
       const data = await response.json();
 
-      console.log(data);
       if (data?.data) {
         setRecipeDetailsData(data?.data);
       }
@@ -26,8 +25,6 @@ export default function Details() {
 
     getRecipeDetails();
   }, []);
-
-  console.log(recipeDetailsData, 'recipeDetailsData');
 
   return (
     <div className="container mx-auto py-10 grid grid-cols-1 lg:grid-cols-2 gap-10">
