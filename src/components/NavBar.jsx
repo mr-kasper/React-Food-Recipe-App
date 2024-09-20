@@ -9,7 +9,7 @@ export default function Navbar() {
   return (
     <nav className="flex justify-between items-center py-8 container mx-auto flex-col lg:flex-row gap-5 lg:gap-0">
       <h2 className="text-2xl font-semibold">
-        <NavLink to={'/React-Food-Recipe-App'}>FoodRecipe</NavLink>
+        <NavLink to={'/React-Food-Recipe-App/'}>FoodRecipe</NavLink>
       </h2>
       <form onSubmit={handleSubmit}>
         <input
@@ -27,7 +27,7 @@ export default function Navbar() {
       <ul className="flex gap-5">
         <li>
           <NavLink
-            to={'/React-Food-Recipe-App'}
+            to={'/React-Food-Recipe-App/'}
             className="text-black hover:text-gray-700 duration-300"
           >
             Home
